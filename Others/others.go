@@ -238,7 +238,7 @@ func Build(options *FlagOptions, outfile string, framework int) {
 
 }
 
-// 输Out file name
+// lose Out file name
 func getOutfileName(filename string) string {
 	base := filepath.Base(filename)
 	ext := filepath.Ext(base)
