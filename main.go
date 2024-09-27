@@ -13,7 +13,7 @@ import (
 //set CGO_ENABLED=0
 //set GOOS=darwin
 //set GOARCH=amd64
-//-ldflags="-s -w" -o darkPulse.exe
+//-ldflags="-s -w" -o shellcode.exe
 
 // -i calc_shellcode_64.bin
 func Options() *Others.FlagOptions {
