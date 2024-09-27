@@ -61,31 +61,29 @@ Example 1：
 
 ```
 darkPulse.exe -i calc_shellcode.bin -h
-      _            _    _____       _
-     | |          | |  |  __ \     | |
-   __| | __ _ _ __| | _| |__) |   _| |___  ___
-  / _` |/ _` | '__| |/ /  ___/ | | | / __|/ _ \
- | (_| | (_| | |  |   <| |   | |_| | \__ \  __/
-  \__,_|\__,_|_|  |_|\_\_|    \__,_|_|___/\___|
 
-                    author fdx_xdf
-                    version 2.1
-                    2024.07
+                 ░█▄█░█▀█░█▀▀░█▀▄░█░█░█▀█░█▀█░█▀▀░█▀▄░░░░░█▀▀░█░█░█▀▀░█░░░█░░░█▀▀░█▀█░█▀▄░█▀▀
+                 ░█░█░█▀█░█░█░█▀▄░█░█░█░█░█░█░█▀▀░█▀▄░▄▄▄░▀▀█░█▀█░█▀▀░█░░░█░░░█░░░█░█░█░█░█▀▀
+                 ░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░▀░▀░▀░▀▀▀░▀░▀░░░░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀▀▀
+	                                               
+                                   author 0nsec               
+	                                version 1.0.0              
+                                     2024.09                   
 
 Usage:
-    
-  -h <help>: Show help information
-  -i <path>: Path to raw format shellcode
-  -enc <encryption>: Shellcode encryption method (default: aes)
-  -lang <language>: Select the language of the loader (default 'c', possible values: c,rust)
-  -o <output>: Output file (default: Program)
-  -k <keyLength>: Encryption key length (default: 16)
-  -obf <obfuscation>: Obfuscate shellcode to reduce entropy (default: uuid)
-  -f <framework>: Is the target architecture 32-bit or 64-bit?
-  -sandbox <true/false>: Whether to enable anti-sandbox mode (default: true)
-  -unhook <true/false>: Whether to enable unhook mode (default: false, use indirect syscall to load)
-  -loading <loadingTechnique>: Please select the loading method, support callback, fiber, earlybird (default: callback)
-  -debug  <true/false>: Whether to print the shellcode intermediate encryption/obfuscation process (default is 'false', that is, do not print)
+	[+]  -h <help>: Show help information
+	[+]  -i <path>: Path to raw format shellcode
+	[+]  -enc <encryption>: Shellcode encryption method (default: aes)
+	[+]  -lang <language>: Select the language of the loader (default 'c', possible values: c,rust)
+	[+]  -o <output>: Output file (default: Program)
+	[+]  -k <keyLength>:  Encryption key length (default: 16)
+	[+]  -obf <obfuscation>: Obfuscate shellcode to reduce entropy (default: uuid)
+	[+]  -f <framework>:  Is the target architecture 32-bit or 64-bit?
+	[+]  -sandbox <true/false>: Whether to enable anti-sandbox mode (default: true)
+	[+]  -unhook <true/false>: Whether to enable unhook mode (default: false, use indirect syscall to load)
+	[+]  -loading <loadingTechnique>: Please select the loading method, support callback, fiber, earlybird (default: callback)
+	[+]  -debug  <true/false>: Whether to print the shellcode intermediate encryption/obfuscation process (default is 'false', that is, do not print)
+
 ```
 
 Example 2：
