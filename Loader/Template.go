@@ -193,7 +193,7 @@ var __c__unhook__earlyBird = `
     MyNtTestAlert();
 `
 
-// 纤程加载
+// Fiber loading
 var __c__unhook__fiber = `
 	
     char convert_thread_to_fiber[] = {  'r', 'e', 'b', 'i', 'F', 'o', 'T', 'd', 'a', 'e', 'r', 'h','T', 't', 'r', 'e', 'v', 'n', 'o', 'C', '\0' };
@@ -337,12 +337,13 @@ void reverseString(char* str) {
     char temp;
 
     while (left < right) {
-        // 交换两个字符
+        // Swap two characters
         temp = str[left];
         str[left] = str[right];
         str[right] = temp;
 
-        // 移动指针
+        // Move the pointer
+
         left++;
         right--;
     }
@@ -353,12 +354,12 @@ void reverseWcharString(wchar_t* str) {
     int right = wcslen(str) - 1;
 
     while (left < right) {
-        // 交换两个宽字符
+        // Swap two wide characters
         wchar_t temp = str[left];
         str[left] = str[right];
         str[right] = temp;
 
-        // 移动指针
+        // Move the pointer
         left++;
         right--;
     }
@@ -457,7 +458,7 @@ int main()
     LdrLoadrDll = (pNewLdrLoadDll)trampoline;
 
     #else
-    //  x86 架构下的代码
+    //  x86 Code under the architecture
 	LPVOID trampoline = MyVirtualAlloc1(NULL, 19, MEM_RESERVE | MEM_COMMIT, PAGE_READWRITE);
 
 	LPVOID jmpAddr = (void*)((char*)origLdrLoadDll + 0x2);
